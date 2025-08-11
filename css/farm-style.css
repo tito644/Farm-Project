@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow:unset;
+    
+}
+li{
+    list-style: none;
+}
+a:link{
+    text-decoration: none; 
+}
+body{
+    direction: rtl;
+    text-align: right;
+    width: 100%;
+    height: 100%;
+}
+.container{
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+/** up button**/
+#up{
+    width: 50px; 
+    height: 50px;
+    border-radius: 10px;
+    position: fixed;
+    z-index: 999;
+    right: 50px;
+    bottom: 50px;
+    display: none;
+}
+/* nav intro*/
+.intro{
+    background-color: #167442;
+    color: #fff;
+    height: 50px;
+    font-size: 20px;
+    text-align: center;
+    padding-top: 10px;
+}
+.fa-user,.fa-lock-open{
+    padding: 10px;
+}
+.intro a{
+    color: #fff;
+}
+.dropdown{
+    text-align: left;
+}
+.dropdown-menu{
+    background-color: #167442;
+}
+.dropdown-menu a{
+    color: #000;
+}
+.dropdown-menu a:hover{
+    color: rgb(255, 255, 255);
+    background-color: #000;
+}
+/* navbar*/
+.header{
+    background-color: #fff !important;
+    height: 90px;
+}
+.header_2{
+    background-color: #fff  !important;
+    position: fixed;
+    top: -70px;
+    left: 0;
+    right: 0;
+    z-index: 999999;
+    transform: translateY(70px);
+    transition: transform 500ms ease , 500ms ease;
+}
+.header .navbar{
+    background-color: transparent !important;
+    padding-top: 8px;
+}
+.navbar .navbar-nav{
+    margin: 0 auto;
+    font-size: 22px;
+  
+}
+.navbar img{
+    width: 78px;
+    height: 73px;
+}
+.fa-shopping-bag{
+    font-size: 28px;
+    position: relative;
+    color: #000;
+}
+.fa-shopping-bag::after{
+    position: absolute;
+    content: "0";
+    background-color: #167442;
+    color: white;
+    font-size: 16px;
+    bottom: 2px;
+    right: -8px;
+    padding: 0px 4px;
+    border-radius: 50%;
+}
+.nav-link{
+    font-weight:500;
+}
+.nav-link:hover{
+    border: 3px solid #167442;
+    transition: .5s ease-out;
+}
+/* end of navbar*/
+/* large carousel*/
+.carousel-caption{
+    bottom: 3rem;
+    z-index: 10;
+}
+.carousel-caption p{
+    font-size: 22px;
+    color: #222;
+}
+.carousel-caption h1{
+    color: #444;
+}
+.carousel-caption .btn{
+    background-color: rgba(34, 34, 34, 0.363);
+    width: 180px;
+    height: 50px;
+    margin-top: 20px;
+}
+.carousel-caption .btn:hover{
+    background-color: #167442b0;
+}
+.carousel-item {
+    height: 32rem;
+  }
+.carousel-item > img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    height: 32rem;
+  }
+  
+  @media (min-width: 40em) {
+    /* Bump up size of carousel content */
+    .carousel-caption p {
+      margin-bottom: 1.25rem;
+      font-size: 1.25rem;
+      line-height: 1.4;
+    }
+}
+  
+/* تقسيم الصفحة الي فئات */
+.shop{
+    margin-top: 50px;
+}
+.shop img{
+    width: 450px;
+    height: 40vh;
+    background-size: contain;
+    overflow: hidden;
+}
+.card{
+    margin: 110px 60px 0 0;
+    
+}
+.card li,.card-header{
+height: 90px;
+
+}
+.list-group-item img{
+    width: 45px;
+    height: 45px;
+    background-color: #fff;
+    margin: 10px;
+}
+.list-group li{
+    font-size: 22px;
+    color: #333;
+}
+.card-header img{
+    width: 78px;
+    height: 73px;
+}
+.list-group-item{
+    transition: .3s ease-in-out;
+}
+.list-group-item:hover{
+    filter: brightness(50%);
+    filter:contrast(90%);
+}
+
+
+/***الخصومات والعروض ****/
+
+.vip{
+    position: relative; 
+    overflow: hidden;
+}
+.vip img{
+    height: 50vh;
+}
+.overlay {
+    background-color: rgba(0, 0, 0, 0.39);
+    height: 100%;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    transition: all .5s;
+}
+.vip:hover .overlay{
+    opacity:1;
+    z-index: 9999;
+}
+.overlay .icons {
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transition: all .5s;
+    transform: translateY(15px);
+
+}
+.vip:hover .overlay .icons {
+    transform: translateY(0);
+}
+
+.vip img {
+    transition: all .5s;
+}
+.vip:hover img {
+    transform: scale(1.1);
+}
+.icons{
+    margin-top: 70px;
+    text-align: center;
+}
+.bts,.fa-store,.fad {
+    font-size: 18px;
+    transition: opacity .3s;
+    font-weight: 300;
+    -webkit-font-smoothing: antialiased;
+    border-radius: 100%;
+    background: rgba(255,255,255,0.8);
+    color: #333;
+    height: 42px;
+    width: 42px;
+    line-height: 42px;
+    opacity: .99;
+    text-align: center;
+    display: inline-block;
+    margin: 0 10px;
+}
+del{
+    color: #777;
+}
+/* العناصر المختلفة المعروضة للبيع*/
+.section-category{
+    padding-bottom: 50px;
+}
+.category-item{
+    margin: 20px 0;
+    text-align: center;
+}
+.category-item img{
+    width: 60%;
+    height: 30vh;
+    margin-bottom: 10px;
+    transition: .5s ease-in-out;
+}
+.category-item:hover img{
+    box-shadow: 1px 1px 7px 6px #c7c5c5;
+    background-color: #16744238;
+    filter: brightness(80%);
+}
+
+.category-title{
+    font-size: 33px;
+    margin-bottom: 10px;
+}
+.category-line{
+    width: 80px;
+    display: block;
+    margin: auto;
+    height: 4px;
+    background-color: #167442;
+    transition: width .5s;
+}
+.section-category:hover .category-line{
+    width: 120px;
+}
+.section-category{
+    text-align: center;
+}
+.product{
+    position: relative; 
+    overflow: hidden;
+}
+.cover {
+    position: absolute;
+    opacity: 0;
+    inset: 0;
+    transition: all .5s;
+}
+.product:hover .cover{
+    opacity:1;
+    z-index: 9999;
+}
+.cover .icons {
+    text-align: center;
+    position: relative;
+    top: 20%;
+    left: 7%;
+    transition: all .5s;
+    transform: translateY(15px);
+
+}
+.product:hover .cover .icons {
+    transform: translateY(0);
+}
+
+.product img {
+    transition: all .5s;
+}
+.product:hover img {
+    transform: scale(1.1);
+}
+.product h6{
+    padding: 20px 50px 0 50px;
+}
+/*  footer*/
+.end-list{
+    border-top: solid #167442 3px;
+    background-color: #222222;
+    margin-top: 50px;
+    color: #fff;
+    padding: 20px 0 10px 0;
+}
+.contact p{
+    padding-top: 20px;
+    color: #fff;
+    font-size: 15px;
+}
+.contact h6{
+    color: #999;
+}
+.icons{
+    margin-right: 50px;
+}
+.sign a i{
+    font-size: 20px;
+    color: #999;
+    margin: 20px;
+}
+.sign a i:hover{
+    color: #167442;
+}
+.sign label{
+    margin: 30px 30px 10px 0;
+    width: 280px;
+    height: 65px;
+    background-color: #fff;
+    color: #333;
+    padding:13px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.sign button{
+    width: 100px;
+    height: 65px;
+}
+
+
+
+
+.loading{
+    width: 100%;
+    height: 100vh;
+    background-color: #167442;
+    position: fixed;
+    inset: 0;
+    z-index: 99999;
+}
+.spinner {
+    width: 70px;
+    height: 70px;
+    background-color: #999;
+    border-radius: 10px;
+    margin: 300px auto;
+    -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @-webkit-keyframes sk-rotateplane {
+    0% { -webkit-transform: perspective(120px) }
+    50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+    100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg) 
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+      -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg) 
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+      -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }
+

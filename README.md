@@ -1,2 +1,2 @@
 # Farm-Project
-ضيف بذور وحدائق وصحه ومبيدات ومكافحة ومياه الي image 
+Put بذور and حدائق and صحه and مبيدات and مكافحة and مياه to image
